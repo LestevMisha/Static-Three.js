@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+        <!-- respective documentation https://threejs.org/docs/#manual/en/introduction/Installation -->
+        <!-- keep up with the versions for importmap, to change them use this link (today (Wed Jun 5 9:33 AM 2024) the latest is 0.165.0) https://www.npmjs.com/package/three?activeTab=versions -->
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+              }
+            }
+          </script>
+	</head>
+	<body>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
